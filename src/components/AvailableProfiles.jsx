@@ -104,8 +104,7 @@ const AvailableProfiles = () => {
   return (
     <div className="w-full flex justify-center bg-gray-50 py-8">
       <div className="max-w-6xl w-full px-4">
-      
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {doctors.map((doctor) => (
             <DoctorCard key={doctor.id} doctor={doctor} />
           ))}

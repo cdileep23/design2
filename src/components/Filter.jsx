@@ -75,8 +75,9 @@ const Filter = () => {
 
   return (
     <div className="w-full flex justify-center bg-gray-50">
-      <div className="max-w-6xl w-full p-6">
-        <div className="flex justify-between gap-2 mb-8">
+      <div className="max-w-6xl w-full p-4 sm:p-6">
+       
+        <div className="flex flex-wrap md:justify-between gap-3 mb-6">
           {filterCategories.map((category) => (
             <div key={category.key} className="relative">
               <button
@@ -105,10 +106,13 @@ const Filter = () => {
             </div>
           ))}
 
-          <button className="bg-green-50 text-green-700 px-4 py-2 rounded-md flex items-center gap-2">
-            All filters
-            <ChevronDown size={16} />
-          </button>
+       
+          <div className="mt-2 sm:mt-0">
+            <button className="bg-green-50 text-green-700 px-4 py-2 rounded-md flex items-center gap-2">
+              All filters
+              <ChevronDown size={16} />
+            </button>
+          </div>
         </div>
 
         {allSelectedFilters.length > 0 && (
